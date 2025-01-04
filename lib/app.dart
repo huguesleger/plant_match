@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:plant_match/core/theme_plant_match.dart';
+import 'package:plant_match/core/widget/navigation/template_page_with_bottom_app_bar.dart';
 import 'package:plant_match/feature/auth/data/firebase_auth_repo.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_state.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
               return const IntroPage();
             }
             if (authState is Authenticated) {
-              return const HomePage();
+              return const TemplatePageWithBottomAppBar();
             } else {
               return const Scaffold(
                 body: Center(

@@ -6,6 +6,7 @@ import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_match/core/app_colors.dart';
 import 'package:plant_match/core/widget/bottomSheet/bottom_sheet.dart';
+import 'package:plant_match/core/widget/navigation/template_page_with_bottom_app_bar.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_state.dart';
 import 'package:plant_match/feature/home/presentation/home_page.dart';
@@ -59,7 +60,8 @@ class _VerifyEmailState extends State<VerifyEmail> {
               );
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => const HomePage()),
+                MaterialPageRoute(
+                    builder: (context) => const TemplatePageWithBottomAppBar()),
               );
             }
             if (state is AuthError) {

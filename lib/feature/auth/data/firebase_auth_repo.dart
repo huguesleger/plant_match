@@ -205,7 +205,6 @@ class FirebaseAuthRepo implements AuthRepository {
     if (user == null) {
       throw Exception("Aucun utilisateur connecté.");
     }
-
     await user.reload(); // Recharge les informations de l'utilisateur
     if (user.emailVerified) {
       return true; // L'e-mail est déjà vérifié

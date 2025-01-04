@@ -6,6 +6,7 @@ import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:plant_match/core/app_colors.dart';
 import 'package:plant_match/core/widget/form/form_text_field.dart';
+import 'package:plant_match/core/widget/navigation/template_page_with_bottom_app_bar.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_state.dart';
 import 'package:plant_match/feature/auth/presentation/forgot_password/presentation/forgot_password_page.dart';
@@ -65,7 +66,7 @@ class _FormSignInState extends State<FormSignIn> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => const HomePage(),
+              builder: (context) => const TemplatePageWithBottomAppBar(),
             ),
           );
         }

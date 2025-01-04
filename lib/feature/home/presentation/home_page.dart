@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:plant_match/core/widget/navigation/template_page_with_bottom_app_bar.dart';
 import 'package:plant_match/feature/auth/domain/entities/user_auth.dart';
 import 'package:plant_match/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:plant_match/feature/intro/presentation/intro_page.dart';
